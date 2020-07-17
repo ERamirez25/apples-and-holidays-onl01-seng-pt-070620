@@ -51,22 +51,17 @@ def all_supplies_in_holidays(holiday_hash)
  holiday_hash.each do |season, holiday|
    puts "#{season.to_s.capitalize}:"
    holiday.each do |event, supplies|
-     puts "#{event.to_s.split("_")"
+     puts "#{event.to_s.split("_").map do {|x| x.capitalize}.join("") }: #{supplies.join(", ")}" 
+    
+   end 
  end
  end
-     
-end
-
-def all_holidays_with_bbq(holiday_hash)
-  holiday_hash.map do |seasons, holiday|
-    holiday.map do |holiday, supply|
-      holiday
-      if supply.include?("BBQ")
-      end 
-    end 
-end
+    
+    
 
 
+
+ 
 
 
 
