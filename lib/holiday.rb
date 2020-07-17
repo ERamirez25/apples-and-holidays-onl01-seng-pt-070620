@@ -1,8 +1,13 @@
 require 'pry'
 
 def second_supply_for_fourth_of_july(holiday_hash)
- 
-end
+  holiday_hash.each do |seasons, holidays|
+  holiday.each do |days, characteristics|
+    if days == :fourth_of_july
+      return characteristics[1]
+    end 
+  end 
+ end
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
